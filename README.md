@@ -1,2 +1,0 @@
-# FCC-Projects
-Freecodecamp projects
