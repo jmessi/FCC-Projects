@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Survey Form</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
+
 <body>
-    <h1 id="title"></h1>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Please fill out all fields</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter your name: <input type="text" id="name" placeholder="Your Name Here"
+                    required></label>
+            <label id="email-label">Enter your email: <input type="email" id="email" placeholder="Your Email Here"
+                    required></label>
+            <label id="number-label">Enter a number: <input type="number" id="number" min="0" max="5000"
+                    placeholder="Your Number Here" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="">Select one option
+                <select name="dropdown" id="dropdown">
+                    <option value="0">(Select one)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Choose an option from this group</p>
+            <label for=""><input type="radio" name="radio" id="" class="inline" value="1"> First</label>
+            <label for=""><input type="radio" name="radio" id="" class="inline" value="2"> Option</label>
+            <label for=""><input type="radio" name="radio" id="" class="inline" value="3"> Of</label>
+            <label for=""><input type="radio" name="radio" id="" class="inline" value="4"> Several</label>
+
+            <p>Choose an option from this group instead</p>
+            <label for=""><input type="radio" name="radio2" id="" class="inline" value="5" >First</label>
+            <label for=""><input type="radio" name="radio2" id="" class="inline" value="6" >Option</label>
+            <label for=""><input type="radio" name="radio2" id="" class="inline" value="7" >Of</label>
+            <label for=""><input type="radio" name="radio2" id="" class="inline" value="8" >Several</label>
+
+            <p>Choose an option from this group</p>
+            <label for=""><input type="checkbox" name="check1" id="" value="check1" class="inline">This option</label>
+            <label for=""><input type="checkbox" name="check2" id="" value="check2" class="inline">Might be better</label>
+            <label for=""><input type="checkbox" name="check3" id="" value="check3" class="inline">Than This One</label>
+        </fieldset>
+        <fieldset>
+            <label for="">Have anything else to say?
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write it here"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit" />
+    </form>
 </body>
+
 </html>
